@@ -60,10 +60,16 @@ Module Demo (M : Monoid).
 
     Ltac prep := unfold goal, build_plusL, build_plusR.
 
-    Theorem test1 : goal 10.
-      prep.
-      Time ltac_canceler.
-    Time Qed.
-    Print Assumptions test1.
+    Theorem test0 : goal 0. prep. Time ltac_canceler. Time Qed.
+    Theorem test1 : goal 10. prep. Time ltac_canceler. Time Qed.
+    Theorem test2 : goal 20. prep. Time ltac_canceler. Time Qed.
+    Theorem test3 : goal 30. prep. Time ltac_canceler. Time Qed.
+    Theorem test4 : goal 40. prep. Time ltac_canceler. Time Qed.
+    Theorem test5 : goal 50. prep. Time ltac_canceler. Time Qed.
+    Theorem test6 : goal 60. prep. Time ltac_canceler. Time Qed.
+    Theorem test7 : goal 70. prep. Time ltac_canceler. Time Qed.
+    Theorem test8 : goal 80. prep. Time ltac_canceler. Time Qed.
+    Theorem test9 : goal 90. prep. Time ltac_canceler. Time Qed.
+    Theorem test10 : goal 100. prep. Time ltac_canceler. Time Qed.
   End Demo.
 End Demo.
